@@ -1,0 +1,2 @@
+// Criando um novo projeto em NextJs
+npx create-next-app@latest nomeProjeto --use-npm

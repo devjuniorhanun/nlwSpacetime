@@ -1,0 +1,2 @@
+// Criando um novo projeto mobile
+npx create-expo-app nomeProjeto

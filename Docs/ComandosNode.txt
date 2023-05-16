@@ -1,0 +1,8 @@
+// Iniciando um projeto em NodeJs
+npm init -y
+
+// Iniciando um projeto em TypeScript
+npx tsc --init
+
+// Gerando as migrate do Prisma
+npx prisma migrate dev
