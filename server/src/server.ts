@@ -5,6 +5,8 @@ import fastify from 'fastify'
 const app = fastify()
 // Chamando o cliente do Prisma
 const prisma = new PrismaClient()
+// Configurando a porta
+const porta = 3001
 
 // Criando uma requisição Get
 app.get('/hello', () => {
@@ -21,8 +23,8 @@ app.get('/usuarios', async () => {
 // Na porta 3000
 app
   .listen({
-    port: 3000,
+    port: porta,
   })
   .then(() => {
-    console.log('Servidor rodando na porta 3000')
+    console.log('Servidor rodando na porta ' + porta)
   })

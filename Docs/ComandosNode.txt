@@ -4,5 +4,8 @@ npm init -y
 // Iniciando um projeto em TypeScript
 npx tsc --init
 
+// Instanciando o prisma
+npm prisma init --datasource-provider Banco
+
 // Gerando as migrate do Prisma
 npx prisma migrate dev

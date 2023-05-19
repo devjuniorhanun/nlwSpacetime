@@ -3,9 +3,19 @@ version: "3"
 services:
   app-nlw:
     build:
-      context: server
+      context: .
     container_name: app-nlw
     ports:
-      - 3000:3000
+      - "3000:3000"
+      - "3001:3001"
+      - "3002:3002"
     volumes:
       - .:/home/node/app
+    tty: true
+    networks: 
+      - node-nlw
+
+
+networks: 
+  node-nlw:
+    driver: bridge  
